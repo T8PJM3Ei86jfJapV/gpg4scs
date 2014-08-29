@@ -13,6 +13,7 @@ gpg4scs是基于新浪云存储（SCS）的加密云盘客户端，类似于Drop
 -------------
 
 1、Python 2.7
+
 2、GnuPG
 
 ----------
@@ -25,19 +26,26 @@ gpg4scs是基于新浪云存储（SCS）的加密云盘客户端，类似于Drop
 2、使用新浪云存储并创建Bucket
 
 3、配置profile.ini文件，参数说明：
+
 local.path: 需要同步的本地目录，该目录及其各级子目录下的文件将与云端同步。
+
 gpg.passphrase: GPG密钥密码，可以为空。
 
 
 >  [sina-storage]
+> 
 > accesskey = 1jsoemyEkCRTBOYRqAlE
-> secretkey = f691cbe0ske5dfd79ac3fbccms6eoec5547f697b  
+> 
+> secretkey = f691cbe0ske5dfd79ac3fbccms6eoec5547f697b
+>
 > buket = my-testing-bucket
-
+>
 > [local]
+> 
 > path = /home/admin/Desktop/
-
+>
 > [gpg]
+> 
 > passphrase = 1234567890
 
 ----------
@@ -45,8 +53,11 @@ gpg.passphrase: GPG密钥密码，可以为空。
 使用
 -------------------
 1、仅上传：```python gpg4scs.py -u```
+
 2、仅下载：```python gpg4scs.py -d```
+
 3、文件同步：```python gpg4scs.py -s```
+
 4、帮助：```python gpg4scs.py -h```
 
 ----------
@@ -54,4 +65,5 @@ gpg.passphrase: GPG密钥密码，可以为空。
 已知Bug
 -------------------
 1、不支持中文路径和中文文件名
+
 2、Linux下不支持带英文空格的路径或文件名
