@@ -1,0 +1,10 @@
+[sina-storage]
+accesskey = 1jsoemyEkCRTBOYRqAlE
+secretkey = f691cbe0ske5dfd79ac3fbccms6eoec5547f697b 
+buket = my-testing-bucket
+
+[local]
+path = /home/admin/Desktop/
+
+[gpg]
+passphrase = 1234567890
